@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbearia Inglesa | Parada Inglesa — São Paulo SP</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Cinzel', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            bgMain: '#09090B',
+            bgCard: '#111114',
+            bgCardInner: '#18181D',
+            brandGold: '#D97706',
+            brandGoldLight: '#F59E0B',
+            brandGreen: '#16A34A',
+            brandGreenHover: '#15803D',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #09090B;
+      color: #FAFAFA;
+    }
+    .hero-overlay {
+      background: radial-gradient(circle at 75% 40%, rgba(217, 119, 6, 0.14), transparent 48%),
+                  linear-gradient(to right, rgba(9, 9, 11, 0.96) 42%, rgba(9, 9, 11, 0.80) 100%),
+                  url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-brandGold selection:text-white">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full z-50 bg-bgMain/95 backdrop-blur-md border-b border-zinc-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
+      <a href="#inicio" class="flex items-center gap-3 shrink-0">
+        <img src="https://cliente.barbeiroagenda.com.br/assets/images/logo.png" 
+             alt="Logo Barbearia Inglesa" 
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+             class="h-11 w-auto object-contain rounded-lg bg-white/5 p-1 border border-zinc-800">
+        <div class="hidden w-10 h-10 rounded-full border border-brandGold/70 bg-brandGold/10 items-center justify-center text-brandGoldLight">
+          <i class="fa-solid fa-crown text-sm"></i>
+        </div>
+        <div>
+          <span class="font-display text-lg sm:text-xl font-bold tracking-wider text-white leading-none block">BARBEARIA INGLESA</span>
+          <span class="text-[9px] tracking-[0.22em] text-zinc-400 font-semibold uppercase block mt-1">
+            Parada Inglesa • São Paulo - SP
+          </span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-6 text-xs font-semibold text-zinc-300">
+        <a href="#inicio" class="hover:text-white transition">Início</a>
+        <a href="#servicos" class="hover:text-white transition">Serviços & Tabela</a>
+        <a href="#localizacao" class="hover:text-white transition">Localização</a>
+        <a href="#avaliacoes" class="hover:text-white transition flex items-center gap-1">
+          Avaliações <span class="text-brandGoldLight font-bold">4.9 ★</span>
+        </a>
+      </nav>
+
+      <div class="flex items-center gap-2.5">
+        <button onclick="abrirSimulador()"
+                class="hidden sm:inline-flex items-center justify-center bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white text-xs font-bold px-4 py-2.5 rounded-lg transition cursor-pointer">
+          Simular Horário
+        </button>
+        <a href="https://wa.me/5511995494421?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Barbearia%20Inglesa%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio."
+           target="_blank"
+           class="bg-brandGreen hover:bg-brandGreenHover text-white text-xs font-bold px-4 py-2.5 rounded-lg transition flex items-center gap-2 shadow-lg shadow-brandGreen/25">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span>Agendar Horário</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero-overlay min-h-screen flex items-center pt-28 pb-16 px-4 sm:px-6 border-b border-zinc-800/80">
+    <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-10 items-center">
+      
+      <div class="lg:col-span-7">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-900/90 border border-brandGold/40 text-brandGoldLight text-xs font-bold uppercase tracking-wider mb-6">
+          <span>★★★★★</span>
+          <span class="text-white">NOTA 4.9 NO GOOGLE • PARADA INGLESA</span>
+        </div>
+
+        <h1 class="font-display text-4xl sm:text-6xl md:text-7xl font-bold text-white uppercase leading-[1.05] tracking-tight mb-6">
+          TRADIÇÃO, ESTILO E<br>
+          PRECISÃO NA <span class="text-brandGoldLight">BARBEARIA INGLESA</span>
+        </h1>
+
+        <p class="text-zinc-300 text-base sm:text-lg leading-relaxed max-w-xl mb-8">
+          Experiência premium na Parada Inglesa. Especialistas em corte masculino, barboterapia, visagismo e cuidados estéticos masculinos com hora marcada.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-12">
+          <a href="https://wa.me/5511995494421?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20meu%20hor%C3%A1rio%20na%20Barbearia%20Inglesa."
+             target="_blank"
+             class="bg-brandGreen hover:bg-brandGreenHover text-white font-bold px-7 py-4 rounded-xl transition flex items-center justify-center gap-2.5 text-sm shadow-xl shadow-brandGreen/25">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            Agendar pelo WhatsApp
+          </a>
+          <a href="#servicos"
+             class="bg-zinc-900/90 hover:bg-zinc-800 border border-zinc-700 text-white font-bold px-7 py-4 rounded-xl transition flex items-center justify-center gap-2 text-sm">
+            <i class="fa-solid fa-scissors text-brandGoldLight"></i>
+            Ver Tabela de Serviços
+          </a>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6 pt-8 border-t border-zinc-800/90 max-w-lg">
+          <div>
+            <p class="font-display text-2xl sm:text-3xl font-bold text-white">4.9 ★</p>
+            <p class="text-xs text-zinc-400 mt-0.5">Avaliação Google</p>
+          </div>
+          <div>
+            <p class="font-display text-2xl sm:text-3xl font-bold text-brandGoldLight">CLÁSSICA</p>
+            <p class="text-xs text-zinc-400 mt-0.5">Barbearia Tradicional</p>
+          </div>
+          <div>
+            <p class="font-display text-2xl sm:text-3xl font-bold text-brandGreen">VIP</p>
+            <p class="text-xs text-zinc-400 mt-0.5">Atendimento Pontual</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Direita -->
+      <div class="lg:col-span-5">
+        <div class="bg-bgCard/95 border border-zinc-800 rounded-3xl p-5 sm:p-6 shadow-2xl">
+          <div class="flex items-center justify-between text-xs pb-4 mb-4 border-b border-zinc-800/80">
+            <span class="flex items-center gap-2 text-emerald-400 font-bold tracking-wider uppercase">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              AGENDA ABERTA
+            </span>
+            <span class="px-2.5 py-1 rounded-full bg-zinc-900 border border-zinc-700 text-zinc-300 font-semibold text-[11px]">
+              Parada Inglesa • ZN
+            </span>
+          </div>
+
+          <div class="rounded-2xl border border-brandGold/40 bg-gradient-to-b from-zinc-900 to-black p-6 text-center mb-4 flex flex-col items-center">
+            <img src="https://cliente.barbeiroagenda.com.br/assets/images/logo.png" 
+                 alt="Barbearia Inglesa" 
+                 onerror="this.style.display='none'"
+                 class="h-20 w-auto object-contain mb-3 drop-shadow-lg">
+            <p class="font-display text-2xl font-bold tracking-widest text-white leading-none">
+              BARBEARIA INGLESA
+            </p>
+            <p class="text-[10px] tracking-[0.25em] text-brandGoldLight font-bold uppercase mt-2">
+              — PARADA INGLESA • SÃO PAULO —
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-zinc-800 bg-bgCardInner p-4 mb-4">
+            <p class="text-white font-bold text-sm mb-1">Rua Amaíba, 152</p>
+            <p class="text-zinc-400 text-xs">Parada Inglesa, São Paulo - SP</p>
+            <p class="text-xs text-brandGoldLight mt-2"><i class="fa-regular fa-clock mr-1"></i> Próximo ao Metrô Parada Inglesa</p>
+          </div>
+
+          <button onclick="abrirSimulador()"
+                  class="w-full bg-brandGold hover:bg-amber-500 text-black font-extrabold text-xs uppercase tracking-wider py-4 rounded-xl transition flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-brandGold/20">
+            <i class="fa-regular fa-calendar-check text-base"></i>
+            ESCOLHER SERVIÇO E HORÁRIO
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços & Preços Completos -->
+  <section id="servicos" class="py-20 px-4 sm:px-6 bg-bgCard border-b border-zinc-800/80">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-brandGoldLight font-bold text-xs uppercase tracking-[0.25em]">Menu de Serviços</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-bold text-white uppercase mt-1">Tabela de Preços</h2>
+        </div>
+        <p class="text-zinc-400 text-sm max-w-md">Selecione o serviço desejado e envie sua solicitação direto para o WhatsApp da barbearia.</p>
+      </div>
+
+      <!-- Destaques / Combos -->
+      <h3 class="text-xs font-extrabold uppercase tracking-widest text-brandGoldLight mb-4">Combos & Destaques</h3>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+        
+        <div class="bg-bgMain border-2 border-brandGold rounded-2xl p-5 relative flex flex-col justify-between">
+          <span class="absolute -top-3 right-4 bg-brandGold text-black text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full">Mais Pedido</span>
+          <div>
+            <div class="flex justify-between items-start gap-2 mb-2">
+              <h4 class="text-base font-bold text-white">Corte + Barba</h4>
+              <span class="text-brandGoldLight font-extrabold text-lg shrink-0">R$ 95</span>
+            </div>
+            <p class="text-zinc-400 text-xs mb-4"><i class="fa-regular fa-clock mr-1"></i> Duração: 40min</p>
+          </div>
+          <button onclick="abrirSimulador('Corte + Barba (R$ 95,00)')" class="w-full bg-brandGold hover:bg-amber-500 text-black font-extrabold text-xs py-2.5 rounded-lg uppercase tracking-wider cursor-pointer transition">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/60 rounded-2xl p-5 flex flex-col justify-between transition">
+          <div>
+            <div class="flex justify-between items-start gap-2 mb-2">
+              <h4 class="text-base font-bold text-white">Corte + Barboterapia</h4>
+              <span class="text-brandGoldLight font-extrabold text-lg shrink-0">R$ 110</span>
+            </div>
+            <p class="text-zinc-400 text-xs mb-4"><i class="fa-regular fa-clock mr-1"></i> Duração: 40min</p>
+          </div>
+          <button onclick="abrirSimulador('Corte + Barboterapia (R$ 110,00)')" class="w-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-bold text-xs py-2.5 rounded-lg uppercase tracking-wider cursor-pointer transition">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/60 rounded-2xl p-5 flex flex-col justify-between transition">
+          <div>
+            <div class="flex justify-between items-start gap-2 mb-2">
+              <h4 class="text-base font-bold text-white">Corte + Sobrancelha</h4>
+              <span class="text-brandGoldLight font-extrabold text-lg shrink-0">R$ 70</span>
+            </div>
+            <p class="text-zinc-400 text-xs mb-4"><i class="fa-regular fa-clock mr-1"></i> Duração: 20min</p>
+          </div>
+          <button onclick="abrirSimulador('Corte + Sobrancelha (R$ 70,00)')" class="w-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-bold text-xs py-2.5 rounded-lg uppercase tracking-wider cursor-pointer transition">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/60 rounded-2xl p-5 flex flex-col justify-between transition">
+          <div>
+            <div class="flex justify-between items-start gap-2 mb-2">
+              <h4 class="text-base font-bold text-white">Corte + Progressiva</h4>
+              <span class="text-brandGoldLight font-extrabold text-lg shrink-0">R$ 150</span>
+            </div>
+            <p class="text-zinc-400 text-xs mb-4"><i class="fa-regular fa-clock mr-1"></i> Duração: 1h</p>
+          </div>
+          <button onclick="abrirSimulador('Corte + Progressiva (R$ 150,00)')" class="w-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-bold text-xs py-2.5 rounded-lg uppercase tracking-wider cursor-pointer transition">Agendar</button>
+        </div>
+      </div>
+
+      <!-- Todos os Serviços Individuais -->
+      <h3 class="text-xs font-extrabold uppercase tracking-widest text-zinc-400 mb-4">Cortes, Barba & Estética Masculina</h3>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-5 flex items-center justify-between gap-4 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Corte Adulto</h4>
+            <p class="text-zinc-400 text-xs mt-0.5">Corte à máquina / tesoura • 20min</p>
+            <p class="text-brandGoldLight font-extrabold text-base mt-1.5">R$ 65,00</p>
+          </div>
+          <button onclick="abrirSimulador('Corte Adulto (R$ 65,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-5 flex items-center justify-between gap-4 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Corte Infantil</h4>
+            <p class="text-zinc-400 text-xs mt-0.5">Atendimento especializado • 20min</p>
+            <p class="text-brandGoldLight font-extrabold text-base mt-1.5">R$ 55,00</p>
+          </div>
+          <button onclick="abrirSimulador('Corte Infantil (R$ 55,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-5 flex items-center justify-between gap-4 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Barba</h4>
+            <p class="text-zinc-400 text-xs mt-0.5">Alinhamento e acabamento • 20min</p>
+            <p class="text-brandGoldLight font-extrabold text-base mt-1.5">R$ 45,00</p>
+          </div>
+          <button onclick="abrirSimulador('Barba (R$ 45,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-5 flex items-center justify-between gap-4 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Barboterapia</h4>
+            <p class="text-zinc-400 text-xs mt-0.5">Toalha quente e hidratação • 20min</p>
+            <p class="text-brandGoldLight font-extrabold text-base mt-1.5">R$ 50,00</p>
+          </div>
+          <button onclick="abrirSimulador('Barboterapia (R$ 50,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-5 flex items-center justify-between gap-4 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Acabamento (Pezinho)</h4>
+            <p class="text-zinc-400 text-xs mt-0.5">Contorno na navalha • 20min</p>
+            <p class="text-brandGoldLight font-extrabold text-base mt-1.5">R$ 25,00</p>
+          </div>
+          <button onclick="abrirSimulador('Acabamento / Pezinho (R$ 25,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-5 flex items-center justify-between gap-4 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Sobrancelha</h4>
+            <p class="text-zinc-400 text-xs mt-0.5">Design e limpeza • 10min</p>
+            <p class="text-brandGoldLight font-extrabold text-base mt-1.5">R$ 20,00</p>
+          </div>
+          <button onclick="abrirSimulador('Sobrancelha (R$ 20,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-5 flex items-center justify-between gap-4 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Escova Progressiva</h4>
+            <p class="text-zinc-400 text-xs mt-0.5">Higienização e secagem • 40min</p>
+            <p class="text-brandGoldLight font-extrabold text-base mt-1.5">R$ 80,00</p>
+          </div>
+          <button onclick="abrirSimulador('Escova Progressiva (R$ 80,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-5 flex items-center justify-between gap-4 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Luzes ou Coloração</h4>
+            <p class="text-zinc-400 text-xs mt-0.5">Visual moderno e tonalização • 1h</p>
+            <p class="text-brandGoldLight font-extrabold text-base mt-1.5">R$ 80,00</p>
+          </div>
+          <button onclick="abrirSimulador('Luzes ou Coloração (R$ 80,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-5 flex items-center justify-between gap-4 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Limpeza de Pele - Dermaplanning</h4>
+            <p class="text-zinc-400 text-xs mt-0.5">Renovação facial profunda • 1h</p>
+            <p class="text-brandGoldLight font-extrabold text-base mt-1.5">R$ 120,00</p>
+          </div>
+          <button onclick="abrirSimulador('Limpeza de Pele - Dermaplanning (R$ 120,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Avaliações -->
+  <section id="avaliacoes" class="py-16 px-4 sm:px-6 bg-bgMain border-b border-zinc-800/80">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="text-brandGoldLight text-xl mb-3">★★★★★</div>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-white uppercase mb-3">Nota 4.9 no Google</h2>
+      <p class="text-zinc-400 text-sm max-w-xl mx-auto">Referência em atendimento e qualidade na Parada Inglesa. Ambiente climatizado, pontualidade e profissionais de alto nível.</p>
+    </div>
+  </section>
+
+  <!-- Localização -->
+  <section id="localizacao" class="py-20 px-4 sm:px-6 bg-bgCard border-b border-zinc-800/80">
+    <div class="max-w-7xl mx-auto text-center">
+      <span class="text-brandGoldLight font-bold text-xs uppercase tracking-[0.25em]">Onde Estamos</span>
+      <h2 class="font-display text-3xl sm:text-5xl font-bold text-white uppercase mt-1 mb-4">Parada Inglesa — Zona Norte</h2>
+      <p class="text-zinc-300 text-sm mb-8">Rua Amaíba, 152 — Parada Inglesa, São Paulo - SP</p>
+      <a href="https://maps.google.com/?q=Rua+Amaíba,+152+-+Parada+Inglesa,+São+Paulo+-+SP" target="_blank"
+         class="inline-flex items-center gap-2 bg-zinc-900 border border-zinc-700 text-white font-bold px-6 py-3.5 rounded-xl hover:bg-zinc-800 transition">
+        <i class="fa-solid fa-map-location-dot text-brandGoldLight"></i> Ver Rota no Google Maps
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black border-t border-zinc-800 py-10 px-4 text-center">
+    <p class="font-display text-xl font-bold text-white tracking-wider">BARBEARIA INGLESA</p>
+    <p class="text-xs text-zinc-400 mt-1">Rua Amaíba, 152 • Parada Inglesa • São Paulo - SP</p>
+    <p class="text-xs text-zinc-500 mt-3">WhatsApp: (11) 99549-4421</p>
+  </footer>
+
+  <!-- Modal Simulador -->
+  <div id="modalSimulador" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-bgCard border border-zinc-700 rounded-3xl max-w-md w-full p-6 relative shadow-2xl">
+      <button onclick="fecharSimulador()" class="absolute top-5 right-5 text-zinc-400 hover:text-white text-lg cursor-pointer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <span class="text-brandGoldLight font-bold text-[11px] uppercase tracking-widest">Agendamento Rápido</span>
+      <h3 class="font-display text-2xl font-bold text-white uppercase mt-1 mb-5">Reservar Horário</h3>
+
+      <form onsubmit="enviarWhatsApp(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-zinc-300 mb-1.5">Seu Nome</label>
+          <input type="text" id="clienteNome" required placeholder="Digite seu nome"
+                 class="w-full bg-bgMain border border-zinc-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brandGold">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-zinc-300 mb-1.5">Serviço Desejado</label>
+          <select id="clienteServico" class="w-full bg-bgMain border border-zinc-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brandGold">
+            <option value="Corte + Barba (R$ 95,00)">Corte + Barba — R$ 95,00 (40min)</option>
+            <option value="Corte + Barboterapia (R$ 110,00)">Corte + Barboterapia — R$ 110,00 (40min)</option>
+            <option value="Corte + Sobrancelha (R$ 70,00)">Corte + Sobrancelha — R$ 70,00 (20min)</option>
+            <option value="Corte + Progressiva (R$ 150,00)">Corte + Progressiva — R$ 150,00 (1h)</option>
+            <option value="Corte Adulto (R$ 65,00)">Corte Adulto — R$ 65,00 (20min)</option>
+            <option value="Corte Infantil (R$ 55,00)">Corte Infantil — R$ 55,00 (20min)</option>
+            <option value="Barba (R$ 45,00)">Barba — R$ 45,00 (20min)</option>
+            <option value="Barboterapia (R$ 50,00)">Barboterapia — R$ 50,00 (20min)</option>
+            <option value="Acabamento / Pezinho (R$ 25,00)">Acabamento (Pezinho) — R$ 25,00 (20min)</option>
+            <option value="Sobrancelha (R$ 20,00)">Sobrancelha — R$ 20,00 (10min)</option>
+            <option value="Escova Progressiva (R$ 80,00)">Escova Progressiva — R$ 80,00 (40min)</option>
+            <option value="Luzes ou Coloração (R$ 80,00)">Luzes ou Coloração — R$ 80,00 (1h)</option>
+            <option value="Limpeza de Pele - Dermaplanning (R$ 120,00)">Limpeza de Pele - Dermaplanning — R$ 120,00 (1h)</option>
+          </select>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-zinc-300 mb-1.5">Data</label>
+            <input type="date" id="clienteData" required
+                   class="w-full bg-bgMain border border-zinc-700 rounded-xl px-3 py-3 text-sm text-white focus:outline-none focus:border-brandGold">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-zinc-300 mb-1.5">Horário</label>
+            <select id="clienteHora" class="w-full bg-bgMain border border-zinc-700 rounded-xl px-3 py-3 text-sm text-white focus:outline-none focus:border-brandGold">
+              <option>09:00</option><option>10:00</option><option>11:00</option>
+              <option>13:00</option><option>14:00</option><option>15:00</option>
+              <option>16:00</option><option>17:00</option><option>18:00</option>
+              <option>19:00</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit"
+                class="w-full bg-brandGreen hover:bg-brandGreenHover text-white font-extrabold text-xs uppercase tracking-wider py-4 rounded-xl transition flex items-center justify-center gap-2 cursor-pointer mt-2">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          Confirmar no WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <a href="https://wa.me/5511995494421?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Barbearia%20Inglesa."
+     target="_blank"
+     class="fixed bottom-5 right-5 z-40 w-14 h-14 bg-emerald-500 hover:bg-emerald-400 text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition">
+    <i class="fa-brands fa-whatsapp text-3xl"></i>
+  </a>
+
+  <script>
+    function abrirSimulador(servico = '') {
+      if (servico) document.getElementById('clienteServico').value = servico;
+      document.getElementById('modalSimulador').classList.remove('hidden');
+    }
+    function fecharSimulador() {
+      document.getElementById('modalSimulador').classList.add('hidden');
+    }
+    function enviarWhatsApp(e) {
+      e.preventDefault();
+      const nome = document.getElementById('clienteNome').value;
+      const servico = document.getElementById('clienteServico').value;
+      const data = document.getElementById('clienteData').value.split('-').reverse().join('/');
+      const hora = document.getElementById('clienteHora').value;
+
+      const msg = `Olá, Barbearia Inglesa! Gostaria de agendar pelo site:\n\n` +
+                  `👤 *Nome:* ${nome}\n` +
+                  `✂️ *Serviço:* ${servico}\n` +
+                  `📅 *Data:* ${data} às ${hora}\n\n` +
+                  `Tem horário disponível?`;
+
+      window.open(`https://wa.me/5511995494421?text=${encodeURIComponent(msg)}`, '_blank');
+      fecharSimulador();
+    }
+  </script>
+</body>
+</html>
